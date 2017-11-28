@@ -24,6 +24,7 @@ public class LinkQuickSort {
 		int pivo = low.key;
 		Node p = low;
 		Node q = low.next;
+		// 采用快慢指针方式，交换处理
 		while (q != high) {
 			if (q.key < pivo) {
 				p = p.next;
